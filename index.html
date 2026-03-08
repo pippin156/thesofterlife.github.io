@@ -10,7 +10,18 @@ body {
   padding: 60px;
   color: #becce8;
   border: 1px solid #020c21;
-  margin: 40px;
+  margin: 20px 60px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+  border: 1px solid #020c21
+  pointer-events: none
 }
 
 h1 {
