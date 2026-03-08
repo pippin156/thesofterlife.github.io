@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>the softer life — live</title>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400&display=swap" rel="stylesheet">
+<style>
+body {
+  background: #293b61;
+  font-family: "Spectral";
+  letter-spacing: 6px;
+  padding: 60px;
+  color: #becce8;
+  border: 1px solid #020c21;
+  margin: 40px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #becce8;
+  letter-spacing: 3px;
+}
+
+/* each show is a block */
+.show {
+  margin: 30px 0;
+  line-height: 2;
+}
+
+/* date in the muted smaller text */
+.show-date {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #6a7fa8;
+}
+
+/* venue and location in the main colour */
+.show-venue {
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: #becce8;
+}
+
+.show-location {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #6a7fa8;
+}
+
+/* ticket link reuses the standard link style */
+a {
+  display: inline;
+  text-decoration: none;
+  color: #becce8;
+  letter-spacing: 4px;
+  font-size: 11px;
+  transition: color 0.3s ease, letter-spacing 0.4s ease;
+}
+
+a:hover {
+  color: #e8d5bc;
+  letter-spacing: 8px;
+}
+
+/* placeholder message for when no shows are listed */
+.no-shows {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #6a7fa8;
+  margin-top: 20px;
+}
+
+.back {
+  display: block;
+  margin-top: 60px;
+  font-size: 12px;
+  color: #6a7fa8;
+  letter-spacing: 4px;
+  text-decoration: none;
+  width: fit-content;
+  transition: color 0.3s ease, letter-spacing 0.4s ease;
+}
+
+.back:hover {
+  color: #becce8;
+  letter-spacing: 8px;
+}
+
+@keyframes softAppear {
+  0%   { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+h1          { animation: softAppear 0.8s ease both; }
+.no-shows   { animation: softAppear 0.8s ease 0.2s both; }
+.show       { animation: softAppear 0.8s ease 0.2s both; }
+.back       { animation: softAppear 0.8s ease 0.4s both; }
+</style>
+</head>
+<body>
+
+<h1>live</h1>
+
+<!-- when you have shows, delete the .no-shows paragraph and uncomment the .show blocks below -->
+<p class="no-shows">no upcoming shows — check back soon</p>
+
+<!--
+<div class="show">
+  <div class="show-date">dd mon yyyy</div>
+  <div class="show-venue">venue name</div>
+  <div class="show-location">city, country</div>
+  <a href="#" target="_blank">tickets</a>
+</div>
+-->
+
+<a class="back" href="index.html">← back</a>
+
+</body>
+</html>
