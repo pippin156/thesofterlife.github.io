@@ -2,18 +2,7 @@
 <head>
 <title>the softer life</title>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400&display=swap" rel="stylesheet">
-<style>
-
- body::before {
-  content: "";
-  position: fixed;
-  top: 20px;
-  left: 10px;
-  right: 10px;
-  bottom: 20px;
-  border: 1px solid #020c21
-  pointer-events: none
-} 
+<style> 
   
 body {
   background: #293b61;
@@ -22,9 +11,21 @@ body {
   padding: 60px;
   color: #becce8;
   border: 1px solid #020c21;
+  position: relative;
   margin: 20px 60px;
 }
 
+ body::before {
+  content: "";
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+  border: 1px solid #020c21;
+  pointer-events: none;
+}
+ 
 h1 {
   font-size: 28px;
   margin-bottom: 40px;
