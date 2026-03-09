@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>the softer life - music</title>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400&display=swap" rel="stylesheet">
+<style>
+
+body {
+  background: #293b61;
+  font-family: "Spectral";
+  letter-spacing: 6px;
+  padding: 60px;
+  color: #becce8;
+  border: 1px solid #020c21;
+  position: relative;
+  margin: 20px 20px;  /* top/bottom, left/right */
+}
+
+ body::before {
+  content: "";
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid #020c21;
+  pointer-events: none;
+}
+
+h1  {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #becce8;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 11px
+  letter-spacing: 4px;
+  color: #6a7fa8;
+  margin-top: 40px
+  margin-bottom: 14px
+  font-weight: 400
+}
+
+a {
+  display: block;
+  margin: 18px 0;
+  text-decoration: none;
+  color: #becce8;
+  letter-spacing: 6px;
+  transition: color 0.3s ease, letter-spacing 0.4s ease;
+  width: fit-content;
+}
+
+a:hover {
+  color: #e8d5bc;
+  letter-spacing: 12px;
+}
+
+.back {
+  margin-top: 60px;
+  font-size: 12px;
+  color: #6a7fa8;
+  letter-spacing: 4px;
+}
+
+.back:hover {
+  color: #becce8;
+  letter-spacing: 8px;
+}
+
+@keyframes softAppear {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+h1 { animation: softAppear 0.8s ease both; }
+h2 { animation: softAppear 0.8s ease 0.2s both; }
+a:nth-child(3) { animation: softAppear 0.8s ease 0.3s both; }
+a:nth-child(4) { animation: softAppear 0.8s ease 0.45s both; }
+</style>
+</head>
+<body>
+
+<h1>music</h1>
+
+<h2>moths under glass</h2>
+
+  
+</body>
