@@ -3,6 +3,7 @@
 <title>the softer life - contact</title>
 <link href=https://fonts.googleapis.com/css2?family=Spectral:wght@400&display=swap" rel="stylesheet">
 <style>
+  
 body {
   background: #293b61;
   font-family: "Spectral";
@@ -13,6 +14,17 @@ body {
   margin: 40px;
 }
 
+ body::before {
+  content: "";
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid #020c21;
+  pointer-events: none;
+}
+  
 h1  {
   font-size: 28px;
   margin-bottom: 40px;
